@@ -40,7 +40,7 @@ final_path = os.getcwd()
 path_list = final_path.split("\\")
 # print(final_path)
 final_path = final_path + "\\" + "music_and_sounds"+ "\\"
-if path_list[-1] == "Physics_Pong_Multiplayer" or  path_list[-1] == "Physics_Pong_Multiplayer-master":
+if path_list[-1] == "Physics_Pong_Singleplayer" or  path_list[-1] == "Physics_Pong_Singleplayer-master":
     pass
 #----------------------code for working on terminal----------
 
