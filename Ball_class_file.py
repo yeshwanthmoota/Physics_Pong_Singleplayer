@@ -45,9 +45,9 @@ class Ball:
             pass # Making Ball dissappear off the screen
         else:
             pygame.draw.rect(gameDisplay, WHITE, pygame.Rect(self.x, self.y, BALL_SIDE, BALL_SIDE))
-        # r = (self.side) / 2
-        # g = math.sqrt(2)
-        # pygame.draw.circle(gameDisplay, WHITE, (int(self.x + r*g), int(self.y + r*g)), int(r)) # To print out a circle ball.
+            # r = (BALL_SIDE) / 2
+            # g = math.sqrt(2)
+            # pygame.draw.circle(gameDisplay, WHITE, (int(self.x + r*g), int(self.y + r*g)), int(r)) # To print out a circle ball.
 
 
 

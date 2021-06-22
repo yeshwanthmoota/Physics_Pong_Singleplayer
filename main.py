@@ -87,11 +87,11 @@ def line_point_collide(left_bat, right_bat, ball):
 
 
 def draw_and_tune_winner(winner_text):
-    if winner_text == "I WIN! HA HA :D":
-        draw_text = WINNER_FONT.render(winner_text,1,BLUE)
+    if winner_text == "I WIN!   HA HA HA":
+        draw_text = WINNER_FONT.render(winner_text,1,WHITE)
         gameDisplay.blit(draw_text,(WIDTH/2-(draw_text.get_width())/2, HEIGHT/4 -(draw_text.get_height())/2))
     elif winner_text == "CONGRATULATIONS YOU WIN!":
-        draw_text = WINNER_FONT.render(winner_text,1,RED)
+        draw_text = WINNER_FONT.render(winner_text,1,WHITE)
         gameDisplay.blit(draw_text,(WIDTH/2-(draw_text.get_width())/2, HEIGHT/4 -(draw_text.get_height())/2))
     pygame.display.update()
     channel2.play(GAME_COMPLETION_MUSIC, 1, 2500)
@@ -213,7 +213,7 @@ def main():
                 time.sleep(DELAY)
             winner_text=""
             if LEFT_SCORE >= WINNING_SCORE:
-                winner_text = "I WIN! HA HA :D"
+                winner_text = "I WIN!   HA HA HA"
             if RIGHT_SCORE >= WINNING_SCORE:
                 winner_text = "CONGRATULATIONS YOU WIN!"
 
